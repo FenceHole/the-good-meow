@@ -35,7 +35,7 @@ export function Header() {
   };
 
   const navItems = [
-    { name: "Breaking Mews", sectionId: "section-human-nonsense" },
+    { name: "Breaking Mews", sectionId: "section-lead-story" },
     { name: "Human Nonsense", sectionId: "section-human-nonsense" },
     { name: "Investigations", sectionId: "section-investigations" },
     { name: "The Wire", sectionId: "section-the-wire" },

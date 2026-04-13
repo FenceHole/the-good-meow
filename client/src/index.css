@@ -38,7 +38,7 @@
     from { transform: translateX(0%); }
     to { transform: translateX(-50%); }
   }
-  --animate-marquee: marquee 90s linear infinite;
+  --animate-marquee: marquee 360s linear infinite;
 }
 
 :root {

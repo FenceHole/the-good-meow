@@ -6,9 +6,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
           <h2 className="font-headline font-black text-4xl mb-4">The GOOD Meow.</h2>
-          <p className="font-body text-muted-foreground max-w-md mb-8">
+          <p className="font-body text-muted-foreground max-w-md mb-4">
             An independent publication dedicated to the rigorous, unbiased observation of the bipedal species. 
             Funded entirely by found coins and forgotten treats.
+          </p>
+          <p className="font-body text-xs text-muted-foreground/50 italic max-w-md mb-8">
+            "We don't chase stories. We stare at them from across the room until they come to us." — Editorial Policy, 1972
           </p>
           
           {/* Social Links Grid */}
@@ -62,6 +65,9 @@ export function Footer() {
           <div className="font-label text-xs uppercase tracking-widest">
             © 1972-2026 The Good Meow Press. All rights reserved.
           </div>
+          <div className="font-body text-[10px] text-muted-foreground/40 mt-2 italic">
+            No dogs were consulted in the making of this publication.
+          </div>
         </div>
         
         <div>
@@ -78,10 +84,10 @@ export function Footer() {
         <div>
           <h4 className="font-label font-bold uppercase tracking-widest mb-4 border-b border-black inline-block pb-1">Legal</h4>
           <ul className="space-y-2 font-label text-sm uppercase tracking-wide text-muted-foreground">
-            <li><a href="#" className="hover:text-foreground">Privacy Policy (We Watch You)</a></li>
-            <li><a href="#" className="hover:text-foreground">Terms of Service</a></li>
-            <li><a href="#" className="hover:text-foreground">Masthead</a></li>
-            <li><a href="#" className="hover:text-foreground">Submit a Tip</a></li>
+            <li><a href="#" className="hover:text-foreground">Privacy Policy (We Watch You Sleep)</a></li>
+            <li><a href="#" className="hover:text-foreground">Terms of Service (Non-Negotiable)</a></li>
+            <li><a href="#" className="hover:text-foreground">Corrections (We Don't Make Mistakes)</a></li>
+            <li><a href="#" className="hover:text-foreground">Submit a Tip (Preferably About Tuna)</a></li>
           </ul>
         </div>
       </div>

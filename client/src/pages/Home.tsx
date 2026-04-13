@@ -31,7 +31,8 @@ export default function Home() {
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
         <div className="text-center">
           <div className="font-headline text-4xl font-bold mb-4">Loading...</div>
-          <div className="font-body text-muted-foreground">Fetching the latest cat journalism</div>
+          <div className="font-body text-muted-foreground">Fetching the latest cat journalism...</div>
+          <div className="font-body text-sm text-muted-foreground/60 mt-2 italic">*knocks things off desk while waiting*</div>
         </div>
       </div>
     );
@@ -54,7 +55,7 @@ export default function Home() {
         
         {/* Lead Story Section - Hero */}
         {leadStory && (
-          <section className="mb-12 border-b-4 border-black pb-12">
+          <section id="section-lead-story" className="mb-12 border-b-4 border-black pb-12 scroll-mt-8">
             <ArticleCard article={leadStory} variant="lead" />
           </section>
         )}
@@ -66,6 +67,7 @@ export default function Home() {
           <div id="section-human-nonsense" className="lg:col-span-3 border-r-0 lg:border-r border-black/20 pr-0 lg:pr-8 scroll-mt-8">
             <h4 className="font-label font-black text-2xl uppercase border-b-4 border-black mb-6 pb-2">
               Human Nonsense
+              <span className="block font-body text-[10px] normal-case tracking-normal text-muted-foreground font-normal mt-1 italic">They never learn.</span>
             </h4>
             <div className="flex flex-col gap-8">
               {breakingStories[0] && (
@@ -86,6 +88,7 @@ export default function Home() {
           <div id="section-investigations" className="lg:col-span-6 px-0 lg:px-4 scroll-mt-8">
              <h4 className="font-label font-black text-2xl uppercase border-b-4 border-black mb-6 pb-2 text-center text-accent">
               Deep Dives & Investigations
+              <span className="block font-body text-[10px] normal-case tracking-normal text-muted-foreground font-normal mt-1 italic">Fearless journalism. Except about cucumbers.</span>
             </h4>
             
             <div className="grid grid-cols-1 gap-12">
@@ -104,21 +107,24 @@ export default function Home() {
                     From The Blog
                   </h4>
                   <a 
-                    href="https://thegoodmeow.substack.com" 
+                    href="https://thegoodmeow.substack.com/subscribe" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="group block bg-white border border-black p-4 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
                     data-testid="link-substack-blog"
                   >
-                    <p className="font-label text-xs uppercase text-muted-foreground mb-1">Latest on Substack</p>
+                    <p className="font-label text-xs uppercase text-muted-foreground mb-1">From The Bureau</p>
                     <h3 className="font-headline font-bold text-lg mb-2 group-hover:text-accent">
-                      Read More Cat Journalism
+                      Subscribe to The GOOD Meow
                     </h3>
                     <p className="font-body text-sm text-muted-foreground mb-3">
-                      Subscribe to our Substack for all the latest investigative reports on human behavior.
+                      Get our award-winning* investigations delivered to your inbox. Free. Because we knocked the paywall off the counter.
+                    </p>
+                    <p className="font-body text-[10px] text-muted-foreground/50 mb-3 italic">
+                      *Award pending. We nominated ourselves.
                     </p>
                     <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
-                      Visit Substack <ExternalLink className="w-3 h-3" />
+                      Subscribe Free <ExternalLink className="w-3 h-3" />
                     </div>
                   </a>
                </div>
@@ -129,6 +135,7 @@ export default function Home() {
           <div id="section-the-wire" className="lg:col-span-3 border-l-0 lg:border-l border-black/20 pl-0 lg:pl-8 scroll-mt-8">
             <h4 className="font-label font-black text-2xl uppercase border-b-4 border-black mb-6 pb-2">
               The Wire
+              <span className="block font-body text-[10px] normal-case tracking-normal text-muted-foreground font-normal mt-1 italic">Dispatches from the field. And by field, we mean windowsill.</span>
             </h4>
             <div className="flex flex-col gap-6">
               {otherStories.slice(1, 5).map(article => (
